@@ -1,0 +1,13 @@
+"""
+
+numbers = [44, 22, 54, 87, 345, 912, 654, 18, 33, 76, 11]
+
+a = numbers[:3]
+b = numbers[5:8]
+c = numbers[3:5]
+d = numbers[8:10]
+
+even = a+b
+odd = c+d
+
+"""
