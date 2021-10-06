@@ -1,0 +1,15 @@
+'''
+dict_1 = {"name": "Jon", "surname": "Smith", "age": 6,}
+
+dict_2 = {"name": "Bill", "surname": "Suns", "age": 20,}
+
+templates = (
+    "{name} {surname} закончил школу",
+    "{name} {surname} скоро пойдёт в школу",
+)
+
+user = (dict_1, dict_2)
+
+
+print(templates[dict_2["age"] < 7].format(name = dict_2["name"], surname = dict_2["surname"]))
+'''
