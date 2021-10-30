@@ -1,0 +1,11 @@
+multi_matrix = []
+
+for row in matrix_1:
+    row_row = []
+    for column in zip(*matrix_2):
+        column_row = []
+        for elem in zip(row, column):
+            column_row.append(elem[0]*elem[1])
+        row_row.append(sum(column_row))
+    multi_matrix.append(row_row)
+print(multi_matrix)
