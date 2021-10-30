@@ -1,0 +1,16 @@
+some_builds = [
+    [0, 0, 1, 0],
+    [1, 0, 1, 0],
+    [1, 1, 1, 0],
+    [1, 1, 1, 1]
+]
+
+row = []
+for elem in zip(*some_builds):
+    row.append(sum(elem))
+big_build = []
+list_row = list(enumerate(row, 1))
+for itm in list_row:
+    if itm[1]== 4:
+        big_build.append(itm)
+print(big_build)
