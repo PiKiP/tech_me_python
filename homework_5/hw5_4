@@ -1,0 +1,13 @@
+def my_func(x, y):
+    pre_result = 1
+    now_level = 1
+    while now_level <= (-y):
+        pre_result *= x
+        now_level += 1
+    result = 1 / pre_result
+    return(result)
+
+
+
+numb = my_func(2, -1)
+print(numb)
