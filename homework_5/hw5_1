@@ -1,0 +1,21 @@
+
+def user_data(name, surname, b_day, city, number, email):
+    result = f"""{name} {surname} {b_day} года рождения, проживающий в городе {city}.
+    Контактные данные:
+    -телефон: {number}
+    -email: {email}"""
+    return result
+
+user_template = {
+    "name": "Иван",
+    "surname": "Иванов",
+    "b_day": "1986",
+    "city": "Норильск",
+    "number": "748563914551",
+    "email": "test@test.ru",
+}
+
+user_str = user_data(**user_template)
+
+
+print(user_str)
