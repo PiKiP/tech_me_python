@@ -1,0 +1,12 @@
+def my_func(some_list):
+    pre_result = []
+    result = []
+    for itm in some_list:
+        if itm > min(some_list):
+            pre_result.append(itm)
+    result.append(sum(pre_result))
+    return result
+
+some_list = [8, 3, 10]
+sum_list = my_func(some_list)
+print(sum_list)
